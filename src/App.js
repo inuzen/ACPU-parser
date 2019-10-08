@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import { Container} from '@material-ui/core';
+import Paper from '@material-ui/core/Paper';
+import FormSettings from './components/form/Form';
+
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <Container maxWidth='md'>
+      <Paper style={{padding:'20px 40px'}}>
+      <FormSettings />
+    </Paper>
+    </Container>
   );
 }
+
 
 export default App;
